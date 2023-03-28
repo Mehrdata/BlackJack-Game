@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <title>BlackJack Game</title>
+</head>
+<body>
+
+    <div id="table">
+        <h1>BLACKJACK</h1>
+        <h2>CARDS:</h2>
+        <p id="cards-el">-</p>
+
+        <h3>TOTAL:</h3>
+        <p id="sum-el">-</p>
+    </div>
+
+    <div id="line"></div>
+
+    <div id="wood">
+        <div class="dealer-text">
+            <img id="dealer" class="dealer-image" src="images/normal-icon.svg" alt="dealer-image">
+            <div class="text-box">
+                <p id="message-el">DO YOU WANT TO DRAW A NEW CARD?</p>
+            </div>
+        </div>
+        <button id="start-game" onclick="startGame()">FIRST DRAW</button>
+        <button id="start-game" onclick="newCard()">DRAW</button>
+
+    </div>
+    <audio autoplay loop src="music/alexander-nakarada-silly-intro.mp3">
+        <p>If you are reading this, it is because your browser does not support the audio element.     </p>
+        </audio>
+    
+        <script src="/index.js"></script>
+
+</body>
+</html>
